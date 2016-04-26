@@ -13,6 +13,7 @@
 		0E198FE31CCF9F9100F0C77B /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E198FE21CCF9F9100F0C77B /* Curry.framework */; };
 		0E198FE51CCF9FBD00F0C77B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E198FE41CCF9FBD00F0C77B /* Quick.framework */; };
 		0E198FE71CCF9FC600F0C77B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E198FE61CCF9FC600F0C77B /* Nimble.framework */; };
+		0E198FEA1CCFA6C100F0C77B /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E198FE91CCFA6C100F0C77B /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		0E198FE21CCF9F9100F0C77B /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		0E198FE41CCF9FBD00F0C77B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		0E198FE61CCF9FC600F0C77B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		0E198FE91CCFA6C100F0C77B /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				0E198FAD1CCF9B1500F0C77B /* RGB.h */,
 				0E198FAF1CCF9B1500F0C77B /* Info.plist */,
+				0E198FE91CCFA6C100F0C77B /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E198FEA1CCFA6C100F0C77B /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,7 @@
 		0E198FBF1CCF9B1500F0C77B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -344,12 +349,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincenzostira.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0E198FC01CCF9B1500F0C77B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
