@@ -11,6 +11,13 @@ Sample framework from blog post, not for real world use.
 use_frameworks!
 pod 'RGB', :git => 'https://github.com/smashkins/RGB.git'
 ```
+
+## Carthage (iOS8+)
+- Add this line to your Cartfile
+```bash
+git "https://github.com/smashkins/RGB"
+```
+
 ## How to use
 ```swift
 import RGB
