@@ -12,7 +12,7 @@ use_frameworks!
 pod 'RGB', :git => 'https://github.com/smashkins/RGB.git'
 ```
 
-## Carthage (iOS8+)
+## Carthage (iOS8+) 
 - Add this line to your Cartfile
 ```bash
 git "https://github.com/smashkins/RGB"
